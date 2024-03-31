@@ -1,0 +1,34 @@
+{
+  "cli": {
+    "version": ">= 7.6.2"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal"
+    },
+    "preview": {
+      "distribution": "internal"
+    },
+    "production": {
+      "env": {
+        "STABILITY_API_KEY": "sk-CLKbW51MC3SbI8ZwMK8WTUmf5eocvpuCe7vLeR7thlcwbmhG",
+        "OPENAI_API_KEY": "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"
+      }
+    },
+    "androidapk": {
+      "android": {
+        "buildType": "apk"
+      }
+    },
+    "test": {
+      "env": {
+        "STABILITY_API_KEY": "sk-CLKbW51MC3SbI8ZwMK8WTUmf5eocvpuCe7vLeR7thlcwbmhG",
+        "OPENAI_API_KEY": "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"
+      }
+    }
+  },
+  "submit": {
+    "production": {}
+  }
+}
